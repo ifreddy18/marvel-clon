@@ -4,6 +4,7 @@
     --grey: #999;
     --white: #fff;
     --border-color:#393939;
+    --dot-color: #e1e1e1;
     --bg-dark: #151515;
     --bg-banner: #202020;
     --font-roboto: 'Roboto',Trebuchet MS,Helvetica,Arial,sans-serif;
@@ -228,7 +229,7 @@ body {
     width: 100%;
     position: absolute;
     text-align: center;
-    transform: translateY(275px);
+    transform: translateY(290px);
     z-index: 9;
 }
 
@@ -239,14 +240,13 @@ body {
 .dot {
     display: inline-block;
     width: 18px;
-    height: 3px;
-    background-color: var(--white);
+    border-bottom: 3px solid var(--dot-color);
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 
 .dot.selected {
-    background-color: var(--red);
+    border-bottom: 3px solid var(--red);
 }
 
 .slide {
@@ -282,7 +282,7 @@ body {
 
 .slide-content {
     color: var(--white);
-    padding: 10px 30px 0;
+    padding: 25px 30px 0;
     height: 403px;
 }
 
@@ -294,7 +294,7 @@ body {
     display: block;
     font: 400 16px/1.1 var(--font-roboto-condensed);
     text-transform: uppercase;
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
 
 .slide-headline {
