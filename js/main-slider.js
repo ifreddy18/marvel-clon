@@ -32,7 +32,8 @@ function selectSlide(slideIndex) {
             slides[i].classList.add('toRight');
             slides[i].classList.remove('toLeft');
         } else {
-            slides[slideIndex].classList.remove(['toLeft', 'toRight']);
+            slides[slideIndex].classList.remove('toRight');
+            slides[slideIndex].classList.remove('toLeft');
         }
 
     }
