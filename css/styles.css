@@ -212,14 +212,13 @@ body {
     margin: 0px;
     margin-left: 10px;
 }
-
 /* Promo Section - End */
 
 /* MainSlider - Start */
-
-
 .main-slider {
     max-width: 100vw;
+    height: 693px;
+    overflow-x: hidden;
     background-color: var(--bg-dark);
 }
 
@@ -259,8 +258,6 @@ body {
     position: absolute;
     top: 0;
     opacity: 0;
-    display: inline-block;
-    animation-delay: 400ms;
 }
 
 .slide.active {
@@ -270,21 +267,10 @@ body {
 
 .slide.toRight {
     transform: translateX(15%);
-    animation: mainSlider;
 }
 
 .slide.toLeft {
     transform: translateX(-15%);
-    animation: mainSlider;
-}
-
-@keyframes mainSlider {
-    from {
-        display: block;
-    }
-    to {
-        display: none;
-    }
 }
 
 .slide > img {
@@ -345,12 +331,31 @@ body {
     color: var(--white);
     background-color: var(--red);
 }
-
-
-
-
-
 /* MainSlider - End */
+
+/* SolialLink - Start */
+.social-links-wrapper {
+    width: 100%;
+    color: var(--grey);
+    border-bottom: thin solid #e5e5e5;
+    margin-top: 10px;
+    padding: 10px 30px;
+    text-align: right;
+}
+
+.social_title {
+    width: max-content;
+    position: absolute;
+    font: bold 16px/1.1 var(--font-roboto-condensed);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.social_icon {
+    padding-left: 30px;
+    fill: var(--grey);
+}
+/* SolialLink - End */
 
 
 
