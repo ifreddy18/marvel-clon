@@ -1,0 +1,29 @@
+// Variables
+$red: #e62429;
+$yellow: #e8b63e;
+$grey: #999;
+$white: #fff;
+$border-color:#393939;
+$dot-color: #e1e1e1;
+$bg-dark: #151515;
+$bg-banner: #202020;
+$font-roboto: 'Roboto',Trebuchet MS,Helvetica,Arial,sans-serif;
+$font-roboto-condensed: 'Roboto Condensed',Trebuchet MS,Helvetica,Arial,sans-serif;
+
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: .5px;
+    overflow-x: hidden;
+}

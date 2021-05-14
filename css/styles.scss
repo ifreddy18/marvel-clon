@@ -1,0 +1,116 @@
+@import 'base';
+@import 'components';
+@import 'mainSlider';
+@import 'navbar';
+
+
+
+/********************************/
+/***** Header - Start ******/
+/********************************/
+.header {
+    width: 100%;
+    background-color: $bg-banner;
+    position: relative;
+    height: 52px;
+    display: flex;
+    align-content: space-between;
+}
+
+.header-icon{
+    display: block;
+    padding: 17px;
+}
+
+.menu-icon {
+    float: left;
+    padding-left: 30px;
+}
+
+.brand-logo {
+    margin: 0px auto;
+}
+
+.search-icon {
+    float: right;
+    fill: none;
+    stroke: $white;
+    stroke-width: 2px;
+    padding-right: 30px;
+
+}
+/********************************/
+/***** Header - End ******/
+/********************************/
+
+
+/********************************/
+/***** Home-Page - Start ******/
+/********************************/
+
+/* Promo Section - Start */
+.promo-wrapper {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+}
+
+.promo-content {
+    max-width: 500px;
+    font-family: $font-roboto-condensed;
+    font-size: 12px;
+    line-height: 1;
+    margin: 0px;
+    color: $white;
+}
+
+.promo-logo {
+    margin: 0px;
+    margin-left: 10px;
+}
+/* Promo Section - End */
+
+
+
+/* SolialLink - Start */
+.social-links-wrapper {
+    width: 100%;
+    color: $grey;
+    border-bottom: thin solid #e5e5e5;
+    margin-top: 10px;
+    padding: 10px 30px;
+    text-align: right;
+}
+
+.social_title {
+    width: max-content;
+    position: absolute;
+    font: bold 16px/1.1 $font-roboto-condensed;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.social_icon {
+    padding-left: 30px;
+    fill: $grey;
+}
+/* SolialLink - End */
+
+
+
+
+
+/********************************/
+/***** Home-Page - End ******/
+/********************************/
+
+
+/* Media query 
+576
+768
+992
+1200
+*/
+
