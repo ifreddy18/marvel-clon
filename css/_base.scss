@@ -1,11 +1,13 @@
 // Variables
 $red: #e62429;
 $yellow: #e8b63e;
+$gold: #c6a972;;
 $grey: #999;
+$black: #151515;
 $white: #fff;
 $border-color:#393939;
 $dot-color: #e1e1e1;
-$bg-dark: #151515;
+$bg-dark: $black;
 $bg-banner: #202020;
 $font-roboto: 'Roboto',Trebuchet MS,Helvetica,Arial,sans-serif;
 $font-roboto-condensed: 'Roboto Condensed',Trebuchet MS,Helvetica,Arial,sans-serif;
@@ -19,11 +21,35 @@ $font-roboto-condensed: 'Roboto Condensed',Trebuchet MS,Helvetica,Arial,sans-ser
 }
 
 body {
+    background-color: $bg-dark;
     margin: 0px;
-    font-family: var(--font-roboto);
+    font-family: $font-roboto;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
     letter-spacing: .5px;
     overflow-x: hidden;
+    color: $black;
 }
+
+a {
+    color: inherit;
+}
+
+@mixin border-top {
+    border-top: 1px solid $border-color;
+}
+@mixin border-right {
+    border-right: 1px solid $border-color;
+}
+@mixin border-bottom {
+    border-bottom: 1px solid $border-color;
+}
+@mixin border-left {
+    border-left: 1px solid $border-color;
+}
+
+
+
+
+

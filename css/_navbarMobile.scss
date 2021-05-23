@@ -87,14 +87,16 @@ body.fixed,
     display: flex;
     justify-content: space-between;
     padding: 30px 15px 30px 30px;
+
+    .icon--svg {
+        display: block;
+        fill: $grey;
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
 }
 
-.icon--svg {
-    display: block;
-    fill: $grey;
-    margin-top: 10px;
-    padding-bottom: 30px;
-}
+
 
 .footer-menu-mobile {
     padding: 30px 15px 100px 30px;
@@ -189,4 +191,10 @@ body.fixed,
         max-width: 375px;
     }
 
+}
+
+@media (min-width: 839px) {
+    .menu-mobile-wrapper {
+        display: none;
+    }
 }

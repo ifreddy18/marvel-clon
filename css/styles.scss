@@ -1,47 +1,9 @@
 @import 'base';
 @import 'components';
 @import 'mainSlider';
-@import 'navbar';
-
-
-
-/********************************/
-/***** Header - Start ******/
-/********************************/
-.header {
-    width: 100%;
-    background-color: $bg-banner;
-    position: relative;
-    height: 52px;
-    display: flex;
-    align-content: space-between;
-}
-
-.header-icon{
-    display: block;
-    padding: 17px;
-}
-
-.menu-icon {
-    float: left;
-    padding-left: 30px;
-}
-
-.brand-logo {
-    margin: 0px auto;
-}
-
-.search-icon {
-    float: right;
-    fill: none;
-    stroke: $white;
-    stroke-width: 2px;
-    padding-right: 30px;
-
-}
-/********************************/
-/***** Header - End ******/
-/********************************/
+@import 'header';
+@import 'dropdownMenuItems';
+@import 'navbarMobile';
 
 
 /********************************/
@@ -50,6 +12,7 @@
 
 /* Promo Section - Start */
 .promo-wrapper {
+    margin-top: 52px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -73,7 +36,6 @@
 /* Promo Section - End */
 
 
-
 /* SolialLink - Start */
 .social-links-wrapper {
     width: 100%;
@@ -82,35 +44,37 @@
     margin-top: 10px;
     padding: 10px 30px;
     text-align: right;
+    background-color: $white;
+
+    .social_title {
+        width: max-content;
+        position: absolute;
+        font: bold 16px/1.1 $font-roboto-condensed;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .social_icon {
+        padding-left: 30px;
+        fill: $grey;
+    }
+    
 }
 
-.social_title {
-    width: max-content;
-    position: absolute;
-    font: bold 16px/1.1 $font-roboto-condensed;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
 
-.social_icon {
-    padding-left: 30px;
-    fill: $grey;
-}
 /* SolialLink - End */
 
 
-
-
+@media (min-width: 839px) {
+    .promo-wrapper {
+        margin-top: 92px;
+    }
+}
 
 /********************************/
 /***** Home-Page - End ******/
 /********************************/
 
 
-/* Media query 
-576
-768
-992
-1200
-*/
+
 
