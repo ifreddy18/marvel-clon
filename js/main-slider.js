@@ -1,5 +1,6 @@
 var slides = document.querySelectorAll('.slide');
 var dots = document.querySelectorAll('.dot');
+var tabs = document.querySelectorAll('.slider-tabs-item');
 
 var currentSlide = 0;
 var nextSlide;
@@ -40,9 +41,11 @@ function selectSlide(slideIndex) {
 
     slides[currentSlide].classList.remove('active');
     dots[currentSlide].classList.remove('selected');
+    tabs[currentSlide].classList.remove('active');
 
     slides[slideIndex].classList.add('active');
     dots[slideIndex].classList.add('selected');
+    tabs[slideIndex].classList.add('active');
     
     currentSlide = slideIndex;
 }

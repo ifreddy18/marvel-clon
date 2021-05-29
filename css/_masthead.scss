@@ -1,0 +1,27 @@
+@import 'base';
+@import 'components';
+
+.masthead_wrapper {
+    width: 100%;
+    clip-path: polygon(0 0,0 99%,100% 95%,100% 0);
+
+    & > a {
+       display: block;
+       width: inherit;
+    }
+    
+    .masthead_video {
+        height: 295px;
+        width: inherit;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+
+
+}
+

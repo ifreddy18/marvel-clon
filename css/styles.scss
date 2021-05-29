@@ -4,6 +4,7 @@
 @import 'header';
 @import 'dropdownMenuItems';
 @import 'navbarMobile';
+@import 'masthead';
 
 
 /********************************/
@@ -68,6 +69,31 @@
 @media (min-width: 839px) {
     .promo-wrapper {
         margin-top: 92px;
+    }
+
+    .social-links-wrapper {
+        border: none;
+        width: 174px;
+        position: absolute;
+        top: 690px;
+        right: 0;
+        background-color: transparent;
+
+        .social_title {
+            display: none;
+        }
+
+        .social_icon {
+            padding: 0;
+            margin-left: 15px;
+        }
+    }
+
+}
+
+@media (min-width: 961px) {
+    .social-links-wrapper {
+        top: 640px;
     }
 }
 
