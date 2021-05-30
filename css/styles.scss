@@ -12,6 +12,19 @@
 /********************************/
 
 /* Promo Section - Start */
+
+// Bloque para que no se vea el fondo blanco al desplazarce la barra de menu
+.promo::before {
+    content: "";
+    display: block;
+    height: 52px;
+    width: 100%;
+    background-color: $bg-dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .promo-wrapper {
     margin-top: 52px;
     height: 40px;
