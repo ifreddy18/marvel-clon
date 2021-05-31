@@ -31,6 +31,7 @@ body {
     letter-spacing: .5px;
     overflow-x: hidden;
     color: $black;
+    padding-bottom: 200px;
 }
 
 a {
@@ -49,8 +50,6 @@ a {
 @mixin border-left {
     border-left: 1px solid $border-color;
 }
-
-
 
 
 

@@ -1,0 +1,132 @@
+@import 'base';
+@import 'components';
+
+$img-height-sm: 280px;
+$img-height-md: 440px;
+$img-height-lg: 560px;
+
+.hero-set {
+    margin-top: 75px;
+    width: 100%;
+}
+
+.set-container {
+    clip-path: polygon(0 0,0 100%,100% 92%,100% 0);
+
+    .custom-btn {
+        margin: 0 15px 15px 0;
+    }
+
+}
+
+.set-img-container {
+    width: 100%;
+    overflow: hidden;
+    height: $img-height-sm;;
+
+    img {
+       height: $img-height-sm;
+       margin-left: 50%;
+       transform: translateX(-50%);
+    }
+}
+
+.set-content {
+    width: 100%;
+    background-color: $bg-dark;
+    padding: 60px 30px 80px;
+    
+    figure {
+        padding-bottom: 20px;
+    }
+}
+
+.set-slider {
+    overflow-x: auto;
+    width: 100%;
+    padding: 30px 0 17px;
+
+    .card-container {
+        padding: 0;
+
+        & > ul {
+            justify-content: left;
+
+            li:first-child {
+                margin-left: 30px;
+            }
+        }
+
+        .card-title {
+            font-size: 14px;
+            white-space: normal;
+        }
+
+        
+    }
+}
+
+@media (min-width: 563px) {
+    
+    .set-img-container {
+        img  {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+@media (min-width: 601px) {
+
+    .set-img-container {
+        height: $img-height-md;
+        img  {
+            width: auto;
+            height: $img-height-md;
+        }
+    }
+
+}
+
+@media (min-width: 839px) {
+
+    .set-container {
+        // position: relative;
+        clip-path: none;
+        height: $img-height-lg;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .set-img-container {
+        width: 55%;
+        height: $img-height-lg;
+        img  {
+            height: $img-height-lg;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .set-content {
+        width: 45%;
+        height: inherit;
+        padding: 115px 30px 0 50px;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: $bg-dark;
+            height: 100%;
+            width: 160px;
+            position: absolute;
+            top: 0;
+            right: -159.5px;
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+        }
+    }
+    
+
+}
