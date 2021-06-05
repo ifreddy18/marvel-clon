@@ -95,23 +95,15 @@ $slide-content-height: 403px;
 }
 
 .slide-preheadline {
-    display: block;
-    font: 400 16px/1.1 $font-roboto-condensed;
-    text-transform: uppercase;
-    padding-bottom: 15px;
+    @include preheadline-sm;
 }
 
 .slide-headline {
-    display: block;
-    font: 700 26px/1 $font-roboto-condensed;
-    text-transform: uppercase;
-    padding-bottom: 15px;
+    @include headline-sm;
 }
 
 .slide-description {
-    display: block;
-    font-size: 14px;
-    padding: 0 0 20px;
+    @include description-sm
 }
 
 .slider-tabs {
@@ -260,14 +252,14 @@ $slide-content-height: 403px;
 
     .slider-container {
         clip-path: polygon(0 0,0 100%,100% 92%,100% 0);
+    }
 
-        .slide-content {
-            padding-top: 100px;
+    .slide-content {
+        padding-top: 100px;
+    }
 
-            .slide-headline {
-                font-size: 44px;
-            }
-        }
+    .slide-headline {
+        font-size: 44px;
     }
 
     .slider-tabs {
