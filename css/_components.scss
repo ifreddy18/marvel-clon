@@ -222,6 +222,8 @@
         flex-direction: column;
         justify-content: space-between;
         height: 145px;
+        width: 100%;
+        text-align: left;
 
         .card-title {
             font: 700 16px/1.1 $font-roboto-condensed;
@@ -268,6 +270,7 @@
     .card-body {
         padding-top: 18px;
         cursor: pointer;
+        text-align: left;
 
         .card-title {
             font: 600 14px/1.2 $font-roboto;
