@@ -68,6 +68,13 @@
     }
 }
 
+@mixin card-play-box-active {
+    @include card-play-box;
+    background-color: $red;
+    color: $white;
+    opacity: 1;
+}
+
 @mixin card-icon-insider {
     position: absolute;
     right: 0;
