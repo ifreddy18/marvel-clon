@@ -209,6 +209,10 @@ $img-height-lg: 560px;
             .card-comic {
                 min-width: 14.67%;
                 max-width: 173.167px;
+
+                .card-comic-img {
+                    max-width: 173.167px;
+                }
             }
 
             

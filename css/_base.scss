@@ -4,10 +4,12 @@ $yellow: #e8b63e;
 $gold: #c6a972;;
 $grey: #999;
 $black: #151515;
+$black-dark: #000;
 $white: #fff;
 $border-color:#393939;
 $dot-color: #e1e1e1;
 $bg-dark: $black;
+$link-hover: #bbb;
 $bg-banner: #202020;
 $font-roboto: 'Roboto',Trebuchet MS,Helvetica,Arial,sans-serif;
 $font-roboto-condensed: 'Roboto Condensed',Trebuchet MS,Helvetica,Arial,sans-serif;
@@ -31,7 +33,6 @@ body {
     letter-spacing: .5px;
     overflow-x: hidden;
     color: $black;
-    padding-bottom: 200px;
 }
 
 a {
@@ -69,6 +70,12 @@ a {
     display: block;
     font-size: 14px;
     padding: 0 0 20px;
+}
+
+@mixin footer-main-content-item {
+    @include border-bottom;
+    padding: 0 0 26px;
+    margin: 0 0 40px;
 }
 
 

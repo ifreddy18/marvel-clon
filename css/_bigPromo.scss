@@ -4,7 +4,7 @@
 .big-promo {
     width: 100%;
     margin: 75px auto 0;
-    background-color: $black;
+    background-color: $black-dark;
 
     & > a {
         display: block;
@@ -18,11 +18,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 
 .big-promo-img {
-    // width: 100%;
 
     & > img {
         width: auto;
@@ -104,5 +104,17 @@
         .description {
             max-width: 500px;
         }
+    }
+}
+
+@media (min-width: 961px) {
+    .big-promo {
+        padding: 16px 0;
+    }
+}
+
+@media (min-width: 961px) {
+    .big-promo {
+        padding: 0;
     }
 }

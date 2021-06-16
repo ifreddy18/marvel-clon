@@ -151,7 +151,7 @@
             margin: 0;
             color: $black;
             width: 80%;
-            font: 700 11px/1.2 $font-roboto;
+            font: 700 11px/1.2 $font-roboto !important;
             
             &:hover {
                 color: $black;

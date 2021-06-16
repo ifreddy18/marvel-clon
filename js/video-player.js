@@ -72,6 +72,7 @@ const data = [
     }
 ];
 
+setSliderSize();
 selectVideo(0);
 
 function selectVideo(index) {
@@ -93,11 +94,14 @@ function selectVideo(index) {
 }
 
 // Establecer tamaño slider
-window.onresize = () => {
+function setSliderSize() {
     if (window.innerWidth  > 839) {
         videoSlider.style.height = videoPlayer.offsetHeight; 
     }
-};
+}
+
+window.onresize = () => setSliderSize();
+
 
 
 
